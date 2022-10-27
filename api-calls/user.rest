@@ -1,0 +1,30 @@
+#Login
+POST  http://localhost:3000/user/login
+content-type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "password"
+}
+
+
+###
+# Create User
+POST  http://localhost:3000/user/create
+content-type: application/json
+
+{
+    "email": "user2@gmail.com",
+    "password": "password"
+}
+
+###
+# Create admin
+POST  http://localhost:3000/user/create-admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWE4N2ViMDM5ZWRkMWNkZDQ2Mjg3MiIsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjY2ODc3NDM1LCJleHAiOjE2NjY5NjM4MzV9.nHR-73proBtR1BzgB1vPdDdH3i8giKqnIY8GonhWAjA
+
+{
+    "email": "admin3@gmail.com",
+    "password": "password"
+}
